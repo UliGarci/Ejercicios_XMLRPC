@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class RPCClient {
     public static void main(String[] args) throws IOException, XmlRpcException {
+        //ULISES DANIEL GARCÍA MÉNDEZ
         XmlRpcClientConfigImpl config = new XmlRpcClientConfigImpl();
         config.setServerURL(new URL("http://localhost:1200"));
         XmlRpcClient client = new XmlRpcClient();
