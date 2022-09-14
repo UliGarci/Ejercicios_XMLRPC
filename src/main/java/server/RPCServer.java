@@ -7,6 +7,7 @@ import org.apache.xmlrpc.webserver.WebServer;
 import java.io.IOException;
 
 public class RPCServer {
+    //ULISES DANIEL GARCÍA MÉNDEZ
     public static void main(String[] args) throws XmlRpcException, IOException{
         System.out.println("Iniciando servidor");
         PropertyHandlerMapping mapping = new PropertyHandlerMapping();
