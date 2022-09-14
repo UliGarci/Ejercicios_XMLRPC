@@ -63,7 +63,7 @@ public class RPCClient {
                 System.out.println("Ingrese su peso: ");
                 double peso = sc.nextDouble();
                 Object[] person = {name,altura,peso};
-                Object[] response = (Object[]) client.execute("immss.imc",person);
+                Object[] response = (Object[]) client.execute("Methods.imc",person);
                 System.out.println("Hola "+response[0]+" tu IMC es "+response[1]);
                 break;
         }
