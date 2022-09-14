@@ -10,7 +10,7 @@ public class Methods {
             Object[] result={prod,sum,prom};
         return result;
     }
-
+//ULISES DANIEL GARCÍA MÉNDEZ
     public int sum(int num1, int num2){
         int tot=0;
         while(num1<num2){
