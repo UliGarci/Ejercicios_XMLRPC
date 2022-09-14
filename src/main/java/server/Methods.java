@@ -26,4 +26,11 @@ public class Methods {
         Arrays.sort(num);
         return num;
     }
+    
+    public Object imc(String name, double altura, double peso){
+        double t;
+        t=peso/(altura*altura);
+        Object[] imc={name,t};
+        return imc;
+    }
 }
