@@ -17,7 +17,7 @@ public class RPCClient {
         XmlRpcClient client = new XmlRpcClient();
         client.setConfig(config);
         Scanner sc = new Scanner(System.in);
-        System.out.println("Elija un ejercicio:\n1.-Ejercicio 2\n2.-Ejercicio 3\n3.-Ejercicio 4");
+        System.out.println("Elija un ejercicio:\n1.-Ejercicio 2\n2.-Ejercicio 3\n3.-Ejercicio 4\n4.-Ejercicio IMC");
         int op = sc.nextInt();
         switch(op) {
             case 1:
@@ -54,6 +54,17 @@ public class RPCClient {
                 for(x=0;x<5;x++){
                     System.out.print(arreglo[x]+" ");
                 }
+                break;
+            case 4:
+                System.out.println("Ingrese su nombre: ");
+                String name = sc.nextLine();
+                System.out.println("Ingrese su altura: ");
+                double altura = sc.nextDouble();
+                System.out.println("Ingrese su peso: ");
+                double peso = sc.nextDouble();
+                Object[] person = {name,altura,peso};
+                Object[] response = (Object[]) client.execute("immss.imc",person);
+                System.out.println("Hola "+response[0]+" tu IMC es "+response[1]);
                 break;
         }
     }
